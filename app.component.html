@@ -1,0 +1,15 @@
+<!-- app.component.html -->
+<div>
+  <h1>{{ title }}</h1>
+
+  <!-- Month-Year Dropdown -->
+  <label for="month-year-select">Select Month and Year:</label>
+  <select id="month-year-select" (change)="onMonthYearChange($event)">
+    <option *ngFor="let monthYear of monthYears" [value]="monthYear.value">{{ monthYear.label }}</option>
+  </select>
+
+  <!-- FullCalendar component -->
+  <full-calendar 
+    [options]="calendarOptions"
+    #calendar></full-calendar> <!-- Add a template reference variable -->
+</div>

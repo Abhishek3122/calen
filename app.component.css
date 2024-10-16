@@ -1,0 +1,33 @@
+.calendar-controls {
+    display: flex;                /* Use flexbox for alignment */
+    align-items: center;         /* Center items vertically */
+    margin-bottom: 10px;         /* Space between controls and calendar */
+  }
+  
+  #month-year-select {
+    margin-left: 10px;           /* Space between the label and dropdown */
+    padding: 5px;                /* Padding for better look */
+    font-size: 14px;             /* Font size */
+  }
+  
+  /* Style for dropdown to match the buttons */
+  #month-year-select,
+  button {
+    border: 1px solid #ccc;      /* Border to match button styles */
+    border-radius: 4px;          /* Rounded corners */
+    background-color: #fff;      /* Background color */
+    color: #333;                 /* Text color */
+    cursor: pointer;              /* Pointer cursor on hover */
+  }
+  
+  /* Optionally, add hover effects */
+  #month-year-select:hover,
+  button:hover {
+    border-color: #007bff;       /* Change border color on hover */
+  }
+  
+  /* FullCalendar custom styles */
+  .full-calendar {
+    margin-top: 20px;            /* Space above calendar */
+  }
+  
